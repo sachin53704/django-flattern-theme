@@ -32,5 +32,8 @@ def services(request):
 def testimonials(request):
     return render(request, 'testimonials.html')
 
+def projectForm(request):
+    return render(request, 'project-form.html')
+
 def form(request):
     return render(request, 'form.html')

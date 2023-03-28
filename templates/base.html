@@ -75,7 +75,7 @@
           <li><a class="{% if request.path == '/testimonials/' %}active {% endif %}" href="{% url 'testimonials' %}">Testimonials</a></li>
           <li><a class="{% if request.path == '/pricing/' %}active {% endif %}" href="{% url 'pricing' %}">Pricing</a></li>
           <li><a class="{% if request.path == '/portfolio/' %}active {% endif %}" href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a class="{% if request.path == '/blog/' %}active {% endif %}" class="{% if request.path == '/blog/' %}active {% endif %}" href="{% url 'blog' %}">Blog</a></li>
+          <li><a class="{% if request.path == '/blog/' or request.path == '/single-blog/' %}active {% endif %}" href="{% url 'blog' %}">Blog</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
